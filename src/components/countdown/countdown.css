@@ -1,41 +1,74 @@
-.countdown{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.countdown {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
 }
 
 .countdown .days,
 .countdown .hours,
 .countdown .minutes,
-.countdown .seconds{
-    height: 100%;
-    width: 20%;
-    background-color: rgba(255, 255, 255, 0.09);
+.countdown .seconds {
+  height: 100%;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.09);
 }
 
 .countdown .days p,
 .countdown .hours p,
 .countdown .minutes p,
-.countdown .seconds p{
-    height: 40%;
-    width: 100%;
-    font-size: 24px;
-    padding-top: 15px;
-    font-weight: 400;
+.countdown .seconds p {
+  height: 40%;
+  width: 100%;
+  font-size: 24px;
+  padding-top: 15px;
+  font-weight: 400;
 }
 
 .countdown .days .top,
 .countdown .hours .top,
 .countdown .minutes .top,
-.countdown .seconds .top{
-    height: 60%;
-    border-bottom: 2px solid rgba( 255, 255, 255, 0.4);
-    font-size: 54px;
-    font-weight: 500;
-    text-align: center;
-    padding: 20px 0 0 ;
+.countdown .seconds .top {
+  height: 60%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  font-size: 54px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+@media (max-width: 1024px) {
+  .countdown{
+    justify-content: space-between;
+  }
+
+  .countdown .days p,
+  .countdown .hours p,
+  .countdown .minutes p,
+  .countdown .seconds p {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .countdown .days .top,
+  .countdown .hours .top,
+  .countdown .minutes .top,
+  .countdown .seconds .top {
+    font-size: 46px;
+    padding: 20px 0 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .countdown .days,
+  .countdown .hours,
+  .countdown .minutes,
+  .countdown .seconds {
+    width: 45%;
+    height: 45%;
+  }
 }

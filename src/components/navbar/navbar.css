@@ -18,3 +18,9 @@
 .navbar p span{
     font-weight: bold;
 }
+
+@media (max-width: 768px){
+    .navbar{
+        width: 85%;
+    }
+}

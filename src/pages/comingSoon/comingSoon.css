@@ -1,5 +1,5 @@
 .container{
-    width: 50%;
+    width: 95%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -28,13 +28,107 @@
 }
 
 .container .countdown-cont{
-    width: 1000px;
+    width: 100%;
     height: 220px;
     margin-top: 100px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     .container{
         width: 100%;
+        height: 90%;
+        margin: 0;
+    }
+
+    .container h2{
+        text-align: center;
+        font-size: 44px;
+        font-weight: 400;
+        color: white;
+    
+    }
+    
+    .container p{
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .container .countdown-cont{
+        width: 85%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: -180px;
+    }
+
+    .container h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: white;
+    
+    }
+    
+    .container p{
+        text-align: center;
+        font-size: 18px;
+        color: white;
+    }
+    
+    .container .countdown-cont{
+        width: 80%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 680px){
+    .container{
+        width: 95%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 60px auto 0;
+    }
+
+    .container h2{
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .container .countdown-cont{
+        width: 80%;
+        height: 400px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 468px){
+    .container h2{
+        font-size: 30px;
+    }
+
+    .container .countdown-cont{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 360px){
+    .container{
+        height: auto;
+    }
+    .container p{
+        font-size: 16px;
     }
 }
