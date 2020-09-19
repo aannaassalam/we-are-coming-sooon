@@ -1,0 +1,20 @@
+.navbar{
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.navbar p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar p span{
+    font-weight: bold;
+}
