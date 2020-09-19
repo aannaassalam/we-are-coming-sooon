@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter } from "react-router-dom";
 import ComingSoon from "./pages/comingSoon/comingSoon";

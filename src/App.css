@@ -5,7 +5,7 @@
 }
 
 .App {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to top right, #032f52, #03b699 );
 }
